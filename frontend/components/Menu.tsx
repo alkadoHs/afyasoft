@@ -33,7 +33,7 @@ function Menu() {
     indicator: "text-medium",
     content: "text-small",
   };
-  const [isDrowerOpen, setIsDrowerOpen] = useState(false);
+  const [isDrowerOpen, setIsDrowerOpen] = useState(true);
   return (
     <>
       <Button
