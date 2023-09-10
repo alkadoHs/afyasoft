@@ -21,7 +21,7 @@ export default function SearchModel() {
       <Button
         isIconOnly
         onPress={onOpen}
-        className="bg-slate-50 stroke-2 rounded-full hover:bg-gray-300"
+        className="bg-slate-50 stroke-2 rounded-full hidden md:flex hover:bg-gray-300"
         size="sm"
       >
         <SearchIcon size={18} />

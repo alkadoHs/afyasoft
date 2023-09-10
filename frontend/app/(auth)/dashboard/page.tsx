@@ -11,6 +11,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import InvoiceDashTable from "@/components/InvoiceDashTable";
 import Link from "next/link";
+import DashboardSelect from "./DashboardSelect";
 
 function Page() {
   return (
@@ -19,19 +20,7 @@ function Page() {
         <h3 className="text-slate-700 text-3xl font-medium">
           <span>Admin</span> <span className="hidden lg:inline">Dashboard</span>
         </h3>
-        <FormControl className="w-48">
-          <InputLabel id="demo-simple-select-label">Filter by</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            label="Age"
-          >
-            <MenuItem value={10}>Today</MenuItem>
-            <MenuItem value={20}>Week</MenuItem>
-            <MenuItem value={30}>Month</MenuItem>
-            <MenuItem value={40}>Yeadt</MenuItem>
-          </Select>
-        </FormControl>
+        <DashboardSelect />
       </section>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card className="grid grid-cols-1 md:grid-cols-2 gap-2 bg-green-100">

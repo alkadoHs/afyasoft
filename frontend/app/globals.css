@@ -22,11 +22,20 @@
   border-radius: 100vw;
 }
 
-aside {
-  overflow-y: hidden; /* Initially hide scrollbar */
-  transition: overflow-y 1s; /* Add transition for smooth effect */
-}
-
 aside:hover {
   overflow-y: auto; /* Show scrollbar on hover */
+}
+
+.myaside {
+  transition: 0.5s;
+  animation: animateDrower 0.5s;
+}
+
+@keyframes animateDrower {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
 }

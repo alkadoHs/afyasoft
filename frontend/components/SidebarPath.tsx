@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 interface Props {
   pathName: string;
   name: string;
+  closeSideBar?: () => void;
 }
 
-function SidebarPath({ pathName, name }: Props) {
+function SidebarPath({ pathName, name, closeSideBar }: Props) {
   const currentPath = usePathname();
   return (
     <li
@@ -17,6 +18,7 @@ function SidebarPath({ pathName, name }: Props) {
           ? "marker:text-lg marker:text-sky-400 font-semibold text-green-700"
           : ""
       }
+      onClick={closeSideBar}
     >
       <Link href={pathName}>{name}</Link>
     </li>
