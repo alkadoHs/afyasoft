@@ -22,7 +22,7 @@ function UploadPicture() {
         </p>
       </div>
       <div className="w-full flex justify-center">
-        <Button>Upload</Button>
+        <Button className="bg-slate-900 text-slate-50">Upload</Button>
       </div>
     </div>
   );

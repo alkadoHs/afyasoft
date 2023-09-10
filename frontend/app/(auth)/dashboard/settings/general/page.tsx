@@ -19,7 +19,7 @@ function Page() {
         <Card className="w-full">
           <CardBody className="grid grid-cols-1 gap-4">
             <TextField
-              id="outlined-basic"
+              id="name"
               label="Name"
               defaultValue={"Hekima Dispensary"}
               variant="outlined"
@@ -27,7 +27,7 @@ function Page() {
             <FormControl className="w-full">
               <InputLabel id="demo-simple-select-label">Title</InputLabel>
               <Select
-                labelId="demo-simple-select-label"
+                labelId="title"
                 id="demo-simple-select"
                 value={"Hekima Dispensary"}
                 label="Title"
@@ -44,13 +44,13 @@ function Page() {
               variant="outlined"
             />
             <TextField
-              id="outlined-basic"
+              id="email"
               label="Email"
               defaultValue={"hekima@gmail.com"}
               variant="outlined"
             />
             <TextField
-              id="outlined-basic"
+              id="phone"
               label="Phone Number"
               variant="outlined"
               defaultValue={"076543346"}
@@ -58,13 +58,15 @@ function Page() {
             <TextField
               error={true}
               defaultValue={"God will heal you"}
-              id="outlined-basic"
+              id="message"
               label="Invoice Message"
               variant="outlined"
               helperText="invalid input"
             />
             <div>
-              <Button>Submit</Button>
+              <Button className="w-1/3 bg-slate-900 text-slate-50">
+                Submit
+              </Button>
             </div>
           </CardBody>
         </Card>
