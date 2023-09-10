@@ -9,10 +9,8 @@ function Page() {
     <main>
       <section className="flex gap-6 w-full">
         <Card className="w-full">
-          <CardBody>
-            <ServiceModel />
-            <ServiceTable />
-          </CardBody>
+          <ServiceModel />
+          <ServiceTable />
         </Card>
         <Card className="w-1/2 hidden lg:flex">
           <CardBody>

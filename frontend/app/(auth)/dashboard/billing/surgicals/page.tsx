@@ -11,10 +11,8 @@ function Page() {
     <main>
       <section className="flex gap-6 w-full">
         <Card className="w-full">
-          <CardBody>
-            <SurgicalModel />
-            <SurgicalTable />
-          </CardBody>
+          <SurgicalModel />
+          <SurgicalTable />
         </Card>
         <Card className="w-1/2 hidden lg:flex">
           <CardBody>

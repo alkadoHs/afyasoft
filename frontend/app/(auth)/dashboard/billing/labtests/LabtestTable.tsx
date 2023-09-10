@@ -4,7 +4,7 @@ import { Table, TableHeader, TableColumn, TableBody } from "@nextui-org/table";
 
 const LabtestTable: React.FC = () => {
   return (
-    <Table aria-label="Example empty table">
+    <Table aria-label="Labtest table">
       <TableHeader>
         <TableColumn>S/NO</TableColumn>
         <TableColumn>CATEGORY</TableColumn>
