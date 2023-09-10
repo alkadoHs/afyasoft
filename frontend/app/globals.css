@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background: #f8fafc;
+} */
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.3rem;
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 206, 206);
+  border-radius: 100vw;
+}
+
+aside {
+  overflow-y: hidden; /* Initially hide scrollbar */
+  transition: overflow-y 1s; /* Add transition for smooth effect */
+}
+
+aside:hover {
+  overflow-y: auto; /* Show scrollbar on hover */
+}
